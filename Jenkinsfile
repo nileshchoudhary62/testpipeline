@@ -7,9 +7,9 @@ pipeline {
             steps {
                 script {
                 git scm
-                sh "
+                sh '''
                 echo "hello"
-                "
+                '''
                 } }
         }
     }
