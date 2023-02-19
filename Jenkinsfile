@@ -2,24 +2,11 @@
 pipeline {
     agent any
 
-    options {
-        buildDiscarder logRotator(numToKeepStr: '30')
-        skipDefaultCheckout true
-        disableConcurrentBuilds()
-    }
-
     stages {
-        stage ('scm') {
+        stage('Hello') {
             steps {
-                script {
-                        
-                }
+                git scm
             }
-        }
-    }
-    post {
-        always {
-            cleanWs()
         }
     }
 }
