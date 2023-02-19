@@ -8,7 +8,7 @@ pipeline {
                 script {
                 sh '''
                 echo "hello"
-                pwd
+                printenv
                 '''
                 } }
         }
