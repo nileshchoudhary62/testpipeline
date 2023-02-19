@@ -6,6 +6,9 @@ pipeline {
         stage('Hello') {
             steps {
                 git scm
+                sh"
+                echo "hello"
+                "
             }
         }
     }
