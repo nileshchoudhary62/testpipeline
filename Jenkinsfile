@@ -5,11 +5,12 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
+                script {
                 git scm
                 sh "
                 echo "hello"
                 "
-            }
+                } }
         }
     }
 }
